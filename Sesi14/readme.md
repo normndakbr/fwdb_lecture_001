@@ -8,4 +8,7 @@ Tata Cara Pengumpulan
 - buat branch baru dengan mengetik "git checkout -b namabranch (git checkout -b sesi14_umam)"
 - git add .
 - git commit -m "Tugas Sesi 14 M. Nasihul Umam"
-- git push sesi14_umam
+- git push origin sesi14_umam
+- pada github klik compare & pull request
+- tulis judul dan keterangan, lalu assign nama kalian
+- klik create pull request
