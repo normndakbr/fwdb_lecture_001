@@ -1,0 +1,22 @@
+@keyframes imgToImages
+{
+    from
+    {
+        background-image: url('../images/IMG_4158.jpg');
+    }
+    to
+    {
+        
+        background-image: url('../images/IMG_4138.jpg');
+    }
+}
+
+div
+{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-image: url('../images/IMG_4158.jpg');
+    animation-name: imgToImages;
+    animation-duration: 5s;
+}
