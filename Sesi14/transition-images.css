@@ -1,0 +1,34 @@
+@keyframes imgToImages
+
+{
+    0% {
+            background-image: url('../images/IMG_4128.jpg' ); left:0px; top:0px;
+       }
+
+  25%  {
+            background-image: url('../images/IMG_4128.jpg' ); left:300px; top:0px;
+       }
+
+  50%  {
+            background-image: url('../images/IMG_4128.jpg' ); left:300px; top:300px;           
+       }
+
+  75%  {
+            background-image: url('../images/IMG_4128.jpg' ); left:0px; top:300px;
+        }
+  100% {
+            background-image: url('../images/IMG_4128.jpg' ); left:0px; top:0px;
+        }
+}
+div
+{
+    width: 700px;
+    height: 300px;
+    background-size: cover;
+    background-image: url('../images/IMG_4128.jpg');
+    position: relative;
+    animation-name: imgToImages;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
