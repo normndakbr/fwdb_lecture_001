@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*pada text*/
+        
+        @keyframes animationsText {
+            0% {
+                opacity: 0;
+                color: red;
+            }
+            50% {
+                opacity: 1;
+                color: green;
+            }
+            75% {
+                opacity: 2;
+                color: blue;
+            }
+            100% {
+                opacity: 3;
+                color: black;
+            }
+        }
+        
+        .animation-text {
+            animation: animationsText 5s infinite;
+        }
+        
+        .transition-text {
+            transition: width 1s;
+            -webkit-transition: all .2s ease-in-out;
+        }
+        
+        .transition-text:hover {
+            font-size: 25px;
+            color: red;
+            transform: scale(1);
+        }
+        
+        .anim-trans-text {
+            animation: animationsText 5s infinite;
+            transition: width 1s;
+            -webkit-transition: all .2s ease-in-out;
+        }
+        
+        .anim-trans-text:hover {
+            font-size: 25px;
+            transform: scale(1);
+        }
+        /*pada img*/
+        
+        .animation-img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes example {
+            0% {
+                opacity: 20%;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                opacity: 40%;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                opacity: 60%;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                opacity: 80%;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                opacity: 100%;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .transition-img {
+            width: 100px;
+            height: 100px;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        
+        .transition-img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        
+        .anim-trans-img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        
+        .anim-trans-img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        /*animasi bebas*/
+        
+        .animation-bebas {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: move 2s steps(10) infinite alternate, infinite-spinning 2s;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes move {
+            from {
+                top: 0;
+                left: 0;
+                background: red;
+            }
+            to {
+                top: 100px;
+                left: 100px;
+                background: green;
+            }
+        }
+        
+        @keyframes infinite-spinning {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .transition-bebas {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s linear 1s;
+        }
+        
+        .transition-bebas:hover {
+            width: 300px;
+            background: green;
+        }
+        
+        .anim-trans-bebas {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: move 2s steps(10) infinite alternate, infinite-spinning 2s;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transition: width 2s linear 1s;
+        }
+        
+        .anim-trans-bebas:hover {
+            width: 300px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-text">Ini Animasi pada teks</div><br>
+    <div class="transition-text">Ini Transisi pada teks</div><br>
+    <div class="anim-trans-text">Ini Animasi dan Transisipada teks</div><br>
+    <div>
+        <img class="animation-img" src='neo.png'>
+    </div><br>
+    <div><img class="transition-img" src='neo.png'></div><br>
+    <div><img class="anim-trans-img" src='neo.png'></div><br>
+
+    <div class='animation-bebas'></div>
+    <div class='transition-bebas'></div>
+    <div class='anim-trans-bebas'></div>
+</body>
+
+</html>
