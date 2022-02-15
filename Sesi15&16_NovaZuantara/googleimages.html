@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Apps"><img src="img/bars.png"></a></li>
+                <li><button data-toggle="tooltip" data-placement="bottom" title="Silahkan login">Sign In</button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="img/google images.png">
+            <div class="searchBox">
+                <input type="text" class="search">
+                <div class="icons">
+                    <div><img src="img/search.png"></div>
+                    <div>
+                        <img src="img/kamera.png"> &nbsp; &nbsp;
+                        <img src="img/mic.png"> &nbsp; &nbsp;
+                        <img src="img/pencari.png">
+                    </div>
+                </div>
+            </div>
+            <ul class="languages">
+                <li>Google Offered In :</li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Indonesia</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="row row1">
+                <p class="country">Indonesia</p>
+            </div>
+            <div class="row row2">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Term</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
