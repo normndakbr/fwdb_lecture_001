@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes textAnimate {
+            from {
+                background-color: black;
+            }
+
+            to {
+                background-color: white;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            background-color: red;
+            animation-name: textAnimate;
+            animation-delay: 3s;
+            animation-duration: 2.4s;
+            animation-iteration-count: infinite;
+        }
+
+        p:hover {
+            transition: font-size 4s;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>lorem ipsum text</p>
+
+</body>
+
+</html>

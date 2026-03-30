@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        .segitiga {
+            height: 0px;
+            width: 0px;
+            border-bottom: solid 120px blue;
+            border-left: solid 80px transparent;
+            border-right: solid 80px transparent;
+            animation-name: segitiga;
+            position: relative;
+            animation-delay: 3s;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes segitiga {
+            0% {
+                border-bottom: solid 120px blue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                border-bottom: solid 120px red;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                border-bottom: solid 120px yellow;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                border-bottom: solid 120px green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                border-bottom: solid 120px rgb(0, 109, 128);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .segitiga:hover {
+            transform: rotate(360deg);
+            transition: transform 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="segitiga"></div>
+</body>
+
+</html>

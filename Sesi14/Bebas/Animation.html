@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        .segitiga {
+            height: 0px;
+            width: 0px;
+            border-bottom: solid 120px blue;
+            border-left: solid 80px transparent;
+            border-right: solid 80px transparent;
+            animation-name: segitiga;
+            animation-delay: 3s;
+            animation-duration: 2.4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes segitiga {
+            from {
+                border-bottom: solid 120px blue;
+            }
+
+            to {
+                border-bottom: solid 120px red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="segitiga"></div>
+</body>
+
+</html>
