@@ -1,0 +1,100 @@
+/* Animasi Text */
+.txtanimasi {
+	animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+@keyframes shake-horizontal {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+    80% {
+      transform: translateX(8px);
+    }
+    90% {
+      transform: translateX(-8px);
+    }
+  }
+
+/* Transisi Text */
+.txttransisi {
+    font-size: 14px;
+    transition-duration: 3s;
+    transition-delay: 0s;
+}
+
+.txttransisi:hover {
+    font-size: 36px;
+}
+
+img{
+    height: 150px;
+    weight: 150px;
+}
+/* transisi gambar */
+.gmbrtransisi {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    transition: width s;
+}
+
+.gmbrtransisi:hover {
+    width: 500px;
+}
+
+/* ANIMASI GAMBAR */
+.gmbranimasi {
+	animation: bounce-in-top 1.1s infinite both;
+}
+
+@keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+
